@@ -1,0 +1,1040 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PlantGraphics" targetNamespace="http://tempuri.org/PlantGraphics.xsd" xmlns:mstns="http://tempuri.org/PlantGraphics.xsd" xmlns="http://tempuri.org/PlantGraphics.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=&quot;C:\Users\Tina\Documents\Visual Studio 2008\Projects\PlantCreator\PlantCreator\plantsampledb.mdb&quot;" IsAppSettingsProperty="false" Modifier="Assembly" Name="plantsampledbConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PlantGraphicsInformationTableAdapter" GeneratorDataComponentClassName="PlantGraphicsInformationTableAdapter" Name="PlantGraphicsInformation" UserDataComponentName="PlantGraphicsInformationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `PlantGraphicsInformation` WHERE ((`PlantlsystemID` = ?) AND ((? = 1 AND `ScienceNameID` IS NULL) OR (`ScienceNameID` = ?)) AND ((? = 1 AND `StemLsystemString` IS NULL) OR (`StemLsystemString` = ?)) AND ((? = 1 AND `PetioleLsystemString` IS NULL) OR (`PetioleLsystemString` = ?)) AND ((? = 1 AND `LeafTypeNum` IS NULL) OR (`LeafTypeNum` = ?)) AND ((? = 1 AND `StemLengthNum` IS NULL) OR (`StemLengthNum` = ?)) AND ((? = 1 AND `StemTopRadiusNum` IS NULL) OR (`StemTopRadiusNum` = ?)) AND ((? = 1 AND `StemBottomRadiusNum` IS NULL) OR (`StemBottomRadiusNum` = ?)) AND ((? = 1 AND `PetioleLengthNum` IS NULL) OR (`PetioleLengthNum` = ?)) AND ((? = 1 AND `PetioleTopRadiusNum` IS NULL) OR (`PetioleTopRadiusNum` = ?)) AND ((? = 1 AND `PetioleBottomRadius` IS NULL) OR (`PetioleBottomRadius` = ?)) AND ((? = 1 AND `VeinLengthNum` IS NULL) OR (`VeinLengthNum` = ?)) AND ((? = 1 AND `VeinTopRadiusNum` IS NULL) OR (`VeinTopRadiusNum` = ?)) AND ((? = 1 AND `VeinBottomRadiusNum` IS NULL) OR (`VeinBottomRadiusNum` = ?)) AND ((? = 1 AND `VeinLsystemString` IS NULL) OR (`VeinLsystemString` = ?)) AND ((? = 1 AND `xRotate` IS NULL) OR (`xRotate` = ?)) AND ((? = 1 AND `yRotate` IS NULL) OR (`yRotate` = ?)) AND ((? = 1 AND `zRotate` IS NULL) OR (`zRotate` = ?)) AND ((? = 1 AND `Nitrogen` IS NULL) OR (`Nitrogen` = ?)) AND ((? = 1 AND `Hydrogen` IS NULL) OR (`Hydrogen` = ?)) AND ((? = 1 AND `Potassium` IS NULL) OR (`Potassium` = ?)) AND ((? = 1 AND `Phosphorous` IS NULL) OR (`Phosphorous` = ?)) AND ((? = 1 AND `Calcium` IS NULL) OR (`Calcium` = ?)) AND ((? = 1 AND `Magnesium` IS NULL) OR (`Magnesium` = ?)) AND ((? = 1 AND `Sulphur` IS NULL) OR (`Sulphur` = ?)) AND ((? = 1 AND `Chlorine` IS NULL) OR (`Chlorine` = ?)) AND ((? = 1 AND `Boron` IS NULL) OR (`Boron` = ?)) AND ((? = 1 AND `Iron` IS NULL) OR (`Iron` = ?)) AND ((? = 1 AND `Manganese` IS NULL) OR (`Manganese` = ?)) AND ((? = 1 AND `Zinc` IS NULL) OR (`Zinc` = ?)) AND ((? = 1 AND `Copper` IS NULL) OR (`Copper` = ?)) AND ((? = 1 AND `Sodium` IS NULL) OR (`Sodium` = ?)) AND ((? = 1 AND `Molybdenum` IS NULL) OR (`Molybdenum` = ?)) AND ((? = 1 AND `Division` IS NULL) OR (`Division` = ?)) AND ((? = 1 AND `subDivision` IS NULL) OR (`subDivision` = ?)) AND ((? = 1 AND `Class` IS NULL) OR (`Class` = ?)) AND ((? = 1 AND `subClass` IS NULL) OR (`subClass` = ?)) AND ((? = 1 AND `Order` IS NULL) OR (`Order` = ?)) AND ((? = 1 AND `subOrder` IS NULL) OR (`subOrder` = ?)) AND ((? = 1 AND `Family` IS NULL) OR (`Family` = ?)) AND ((? = 1 AND `subFamily` IS NULL) OR (`subFamily` = ?)) AND ((? = 1 AND `Genus` IS NULL) OR (`Genus` = ?)) AND ((? = 1 AND `subGenus` IS NULL) OR (`subGenus` = ?)) AND ((? = 1 AND `Species` IS NULL) OR (`Species` = ?)) AND ((? = 1 AND `subSpecies` IS NULL) OR (`subSpecies` = ?)) AND ((? = 1 AND `leafLength` IS NULL) OR (`leafLength` = ?)) AND ((? = 1 AND `leafRadius` IS NULL) OR (`leafRadius` = ?)) AND ((? = 1 AND `fruitType` IS NULL) OR (`fruitType` = ?)) AND ((? = 1 AND `flowerType` IS NULL) OR (`flowerType` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ScienceNameID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ScienceNameID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ScienceNameID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ScienceNameID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_StemLsystemString" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="StemLsystemString" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_StemLsystemString" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="StemLsystemString" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PetioleLsystemString" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PetioleLsystemString" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PetioleLsystemString" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PetioleLsystemString" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LeafTypeNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="LeafTypeNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_LeafTypeNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="LeafTypeNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_StemLengthNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="StemLengthNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_StemLengthNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="StemLengthNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_StemTopRadiusNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="StemTopRadiusNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_StemTopRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="StemTopRadiusNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_StemBottomRadiusNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="StemBottomRadiusNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_StemBottomRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="StemBottomRadiusNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PetioleLengthNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PetioleLengthNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_PetioleLengthNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="PetioleLengthNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PetioleTopRadiusNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PetioleTopRadiusNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_PetioleTopRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="PetioleTopRadiusNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PetioleBottomRadius" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PetioleBottomRadius" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_PetioleBottomRadius" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="PetioleBottomRadius" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_VeinLengthNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="VeinLengthNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_VeinLengthNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="VeinLengthNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_VeinTopRadiusNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="VeinTopRadiusNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_VeinTopRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="VeinTopRadiusNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_VeinBottomRadiusNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="VeinBottomRadiusNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_VeinBottomRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="VeinBottomRadiusNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_VeinLsystemString" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="VeinLsystemString" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_VeinLsystemString" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="VeinLsystemString" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_xRotate" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="xRotate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_xRotate" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="xRotate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_yRotate" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="yRotate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_yRotate" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="yRotate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_zRotate" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="zRotate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_zRotate" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="zRotate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Nitrogen" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Nitrogen" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Nitrogen" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Nitrogen" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Hydrogen" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Hydrogen" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Hydrogen" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Hydrogen" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Potassium" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Potassium" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Potassium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Potassium" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Phosphorous" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Phosphorous" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Phosphorous" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Phosphorous" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Calcium" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Calcium" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Calcium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Calcium" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Magnesium" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Magnesium" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Magnesium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Magnesium" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Sulphur" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Sulphur" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Sulphur" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Sulphur" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Chlorine" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Chlorine" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Chlorine" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Chlorine" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Boron" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Boron" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Boron" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Boron" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Iron" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Iron" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Iron" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Iron" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Manganese" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Manganese" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Manganese" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Manganese" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Zinc" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Zinc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Zinc" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Zinc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Copper" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Copper" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Copper" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Copper" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Sodium" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Sodium" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Sodium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Sodium" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Molybdenum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Molybdenum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Molybdenum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Molybdenum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Division" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Division" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Division" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Division" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_subDivision" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="subDivision" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_subDivision" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subDivision" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Class" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Class" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Class" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Class" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_subClass" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="subClass" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_subClass" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subClass" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Order" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Order" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Order" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Order" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_subOrder" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="subOrder" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_subOrder" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subOrder" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Family" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Family" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Family" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Family" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_subFamily" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="subFamily" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_subFamily" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subFamily" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Genus" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Genus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Genus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Genus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_subGenus" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="subGenus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_subGenus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subGenus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Species" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Species" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Species" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Species" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_subSpecies" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="subSpecies" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_subSpecies" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subSpecies" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_leafLength" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="leafLength" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_leafLength" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="leafLength" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_leafRadius" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="leafRadius" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_leafRadius" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="leafRadius" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_fruitType" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="fruitType" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_fruitType" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="fruitType" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_flowerType" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="flowerType" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_flowerType" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="flowerType" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `PlantGraphicsInformation` (`ScienceNameID`, `StemLsystemString`, `PetioleLsystemString`, `LeafTypeNum`, `StemLengthNum`, `StemTopRadiusNum`, `StemBottomRadiusNum`, `PetioleLengthNum`, `PetioleTopRadiusNum`, `PetioleBottomRadius`, `VeinLengthNum`, `VeinTopRadiusNum`, `VeinBottomRadiusNum`, `VeinLsystemString`, `xRotate`, `yRotate`, `zRotate`, `Nitrogen`, `Hydrogen`, `Potassium`, `Phosphorous`, `Calcium`, `Magnesium`, `Sulphur`, `Chlorine`, `Boron`, `Iron`, `Manganese`, `Zinc`, `Copper`, `Sodium`, `Molybdenum`, `Division`, `subDivision`, `Class`, `subClass`, `Order`, `subOrder`, `Family`, `subFamily`, `Genus`, `subGenus`, `Species`, `subSpecies`, `leafLength`, `leafRadius`, `fruitType`, `flowerType`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ScienceNameID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ScienceNameID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="StemLsystemString" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="StemLsystemString" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PetioleLsystemString" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PetioleLsystemString" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="LeafTypeNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="LeafTypeNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="StemLengthNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="StemLengthNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="StemTopRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="StemTopRadiusNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="StemBottomRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="StemBottomRadiusNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="PetioleLengthNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="PetioleLengthNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="PetioleTopRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="PetioleTopRadiusNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="PetioleBottomRadius" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="PetioleBottomRadius" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="VeinLengthNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="VeinLengthNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="VeinTopRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="VeinTopRadiusNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="VeinBottomRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="VeinBottomRadiusNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="VeinLsystemString" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="VeinLsystemString" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="xRotate" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="xRotate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="yRotate" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="yRotate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="zRotate" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="zRotate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Nitrogen" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Nitrogen" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Hydrogen" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Hydrogen" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Potassium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Potassium" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Phosphorous" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Phosphorous" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Calcium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Calcium" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Magnesium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Magnesium" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Sulphur" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Sulphur" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Chlorine" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Chlorine" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Boron" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Boron" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Iron" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Iron" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Manganese" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Manganese" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Zinc" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Zinc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Copper" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Copper" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Sodium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Sodium" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Molybdenum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Molybdenum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Division" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Division" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="subDivision" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subDivision" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Class" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Class" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="subClass" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subClass" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Order" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Order" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="subOrder" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subOrder" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Family" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Family" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="subFamily" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subFamily" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Genus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Genus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="subGenus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subGenus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Species" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Species" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="subSpecies" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subSpecies" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="leafLength" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="leafLength" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="leafRadius" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="leafRadius" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="fruitType" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="fruitType" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="flowerType" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="flowerType" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PlantlsystemID, ScienceNameID, StemLsystemString, PetioleLsystemString, LeafTypeNum, StemLengthNum, StemTopRadiusNum, StemBottomRadiusNum, PetioleLengthNum, PetioleTopRadiusNum, PetioleBottomRadius, VeinLengthNum, VeinTopRadiusNum, VeinBottomRadiusNum, VeinLsystemString, xRotate, yRotate, zRotate, Nitrogen, Hydrogen, Potassium, Phosphorous, Calcium, Magnesium, Sulphur, Chlorine, Boron, Iron, Manganese, Zinc, Copper, Sodium, Molybdenum, Division, subDivision, Class, subClass, [Order], subOrder, Family, subFamily, Genus, subGenus, Species, subSpecies, leafLength, leafRadius, fruitType, flowerType FROM PlantGraphicsInformation</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `PlantGraphicsInformation` SET `ScienceNameID` = ?, `StemLsystemString` = ?, `PetioleLsystemString` = ?, `LeafTypeNum` = ?, `StemLengthNum` = ?, `StemTopRadiusNum` = ?, `StemBottomRadiusNum` = ?, `PetioleLengthNum` = ?, `PetioleTopRadiusNum` = ?, `PetioleBottomRadius` = ?, `VeinLengthNum` = ?, `VeinTopRadiusNum` = ?, `VeinBottomRadiusNum` = ?, `VeinLsystemString` = ?, `xRotate` = ?, `yRotate` = ?, `zRotate` = ?, `Nitrogen` = ?, `Hydrogen` = ?, `Potassium` = ?, `Phosphorous` = ?, `Calcium` = ?, `Magnesium` = ?, `Sulphur` = ?, `Chlorine` = ?, `Boron` = ?, `Iron` = ?, `Manganese` = ?, `Zinc` = ?, `Copper` = ?, `Sodium` = ?, `Molybdenum` = ?, `Division` = ?, `subDivision` = ?, `Class` = ?, `subClass` = ?, `Order` = ?, `subOrder` = ?, `Family` = ?, `subFamily` = ?, `Genus` = ?, `subGenus` = ?, `Species` = ?, `subSpecies` = ?, `leafLength` = ?, `leafRadius` = ?, `fruitType` = ?, `flowerType` = ? WHERE ((`PlantlsystemID` = ?) AND ((? = 1 AND `ScienceNameID` IS NULL) OR (`ScienceNameID` = ?)) AND ((? = 1 AND `StemLsystemString` IS NULL) OR (`StemLsystemString` = ?)) AND ((? = 1 AND `PetioleLsystemString` IS NULL) OR (`PetioleLsystemString` = ?)) AND ((? = 1 AND `LeafTypeNum` IS NULL) OR (`LeafTypeNum` = ?)) AND ((? = 1 AND `StemLengthNum` IS NULL) OR (`StemLengthNum` = ?)) AND ((? = 1 AND `StemTopRadiusNum` IS NULL) OR (`StemTopRadiusNum` = ?)) AND ((? = 1 AND `StemBottomRadiusNum` IS NULL) OR (`StemBottomRadiusNum` = ?)) AND ((? = 1 AND `PetioleLengthNum` IS NULL) OR (`PetioleLengthNum` = ?)) AND ((? = 1 AND `PetioleTopRadiusNum` IS NULL) OR (`PetioleTopRadiusNum` = ?)) AND ((? = 1 AND `PetioleBottomRadius` IS NULL) OR (`PetioleBottomRadius` = ?)) AND ((? = 1 AND `VeinLengthNum` IS NULL) OR (`VeinLengthNum` = ?)) AND ((? = 1 AND `VeinTopRadiusNum` IS NULL) OR (`VeinTopRadiusNum` = ?)) AND ((? = 1 AND `VeinBottomRadiusNum` IS NULL) OR (`VeinBottomRadiusNum` = ?)) AND ((? = 1 AND `VeinLsystemString` IS NULL) OR (`VeinLsystemString` = ?)) AND ((? = 1 AND `xRotate` IS NULL) OR (`xRotate` = ?)) AND ((? = 1 AND `yRotate` IS NULL) OR (`yRotate` = ?)) AND ((? = 1 AND `zRotate` IS NULL) OR (`zRotate` = ?)) AND ((? = 1 AND `Nitrogen` IS NULL) OR (`Nitrogen` = ?)) AND ((? = 1 AND `Hydrogen` IS NULL) OR (`Hydrogen` = ?)) AND ((? = 1 AND `Potassium` IS NULL) OR (`Potassium` = ?)) AND ((? = 1 AND `Phosphorous` IS NULL) OR (`Phosphorous` = ?)) AND ((? = 1 AND `Calcium` IS NULL) OR (`Calcium` = ?)) AND ((? = 1 AND `Magnesium` IS NULL) OR (`Magnesium` = ?)) AND ((? = 1 AND `Sulphur` IS NULL) OR (`Sulphur` = ?)) AND ((? = 1 AND `Chlorine` IS NULL) OR (`Chlorine` = ?)) AND ((? = 1 AND `Boron` IS NULL) OR (`Boron` = ?)) AND ((? = 1 AND `Iron` IS NULL) OR (`Iron` = ?)) AND ((? = 1 AND `Manganese` IS NULL) OR (`Manganese` = ?)) AND ((? = 1 AND `Zinc` IS NULL) OR (`Zinc` = ?)) AND ((? = 1 AND `Copper` IS NULL) OR (`Copper` = ?)) AND ((? = 1 AND `Sodium` IS NULL) OR (`Sodium` = ?)) AND ((? = 1 AND `Molybdenum` IS NULL) OR (`Molybdenum` = ?)) AND ((? = 1 AND `Division` IS NULL) OR (`Division` = ?)) AND ((? = 1 AND `subDivision` IS NULL) OR (`subDivision` = ?)) AND ((? = 1 AND `Class` IS NULL) OR (`Class` = ?)) AND ((? = 1 AND `subClass` IS NULL) OR (`subClass` = ?)) AND ((? = 1 AND `Order` IS NULL) OR (`Order` = ?)) AND ((? = 1 AND `subOrder` IS NULL) OR (`subOrder` = ?)) AND ((? = 1 AND `Family` IS NULL) OR (`Family` = ?)) AND ((? = 1 AND `subFamily` IS NULL) OR (`subFamily` = ?)) AND ((? = 1 AND `Genus` IS NULL) OR (`Genus` = ?)) AND ((? = 1 AND `subGenus` IS NULL) OR (`subGenus` = ?)) AND ((? = 1 AND `Species` IS NULL) OR (`Species` = ?)) AND ((? = 1 AND `subSpecies` IS NULL) OR (`subSpecies` = ?)) AND ((? = 1 AND `leafLength` IS NULL) OR (`leafLength` = ?)) AND ((? = 1 AND `leafRadius` IS NULL) OR (`leafRadius` = ?)) AND ((? = 1 AND `fruitType` IS NULL) OR (`fruitType` = ?)) AND ((? = 1 AND `flowerType` IS NULL) OR (`flowerType` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="ScienceNameID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ScienceNameID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="StemLsystemString" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="StemLsystemString" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="PetioleLsystemString" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PetioleLsystemString" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="LeafTypeNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="LeafTypeNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="StemLengthNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="StemLengthNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="StemTopRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="StemTopRadiusNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="StemBottomRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="StemBottomRadiusNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="PetioleLengthNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="PetioleLengthNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="PetioleTopRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="PetioleTopRadiusNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="PetioleBottomRadius" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="PetioleBottomRadius" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="VeinLengthNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="VeinLengthNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="VeinTopRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="VeinTopRadiusNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="VeinBottomRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="VeinBottomRadiusNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="VeinLsystemString" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="VeinLsystemString" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="xRotate" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="xRotate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="yRotate" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="yRotate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="zRotate" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="zRotate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Nitrogen" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Nitrogen" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Hydrogen" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Hydrogen" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Potassium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Potassium" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Phosphorous" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Phosphorous" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Calcium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Calcium" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Magnesium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Magnesium" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Sulphur" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Sulphur" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Chlorine" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Chlorine" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Boron" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Boron" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Iron" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Iron" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Manganese" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Manganese" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Zinc" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Zinc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Copper" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Copper" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Sodium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Sodium" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Molybdenum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Molybdenum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Division" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Division" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="subDivision" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subDivision" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Class" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Class" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="subClass" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subClass" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Order" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Order" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="subOrder" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subOrder" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Family" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Family" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="subFamily" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subFamily" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Genus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Genus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="subGenus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subGenus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Species" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Species" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="subSpecies" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subSpecies" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="leafLength" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="leafLength" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="leafRadius" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="leafRadius" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="fruitType" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="fruitType" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="flowerType" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="flowerType" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ScienceNameID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="ScienceNameID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_ScienceNameID" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="ScienceNameID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_StemLsystemString" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="StemLsystemString" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_StemLsystemString" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="StemLsystemString" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PetioleLsystemString" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PetioleLsystemString" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_PetioleLsystemString" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="PetioleLsystemString" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LeafTypeNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="LeafTypeNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_LeafTypeNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="LeafTypeNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_StemLengthNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="StemLengthNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_StemLengthNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="StemLengthNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_StemTopRadiusNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="StemTopRadiusNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_StemTopRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="StemTopRadiusNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_StemBottomRadiusNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="StemBottomRadiusNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_StemBottomRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="StemBottomRadiusNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PetioleLengthNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PetioleLengthNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_PetioleLengthNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="PetioleLengthNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PetioleTopRadiusNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PetioleTopRadiusNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_PetioleTopRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="PetioleTopRadiusNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PetioleBottomRadius" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PetioleBottomRadius" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_PetioleBottomRadius" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="PetioleBottomRadius" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_VeinLengthNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="VeinLengthNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_VeinLengthNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="VeinLengthNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_VeinTopRadiusNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="VeinTopRadiusNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_VeinTopRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="VeinTopRadiusNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_VeinBottomRadiusNum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="VeinBottomRadiusNum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_VeinBottomRadiusNum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="VeinBottomRadiusNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_VeinLsystemString" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="VeinLsystemString" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_VeinLsystemString" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="VeinLsystemString" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_xRotate" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="xRotate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_xRotate" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="xRotate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_yRotate" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="yRotate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_yRotate" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="yRotate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_zRotate" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="zRotate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_zRotate" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="zRotate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Nitrogen" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Nitrogen" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Nitrogen" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Nitrogen" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Hydrogen" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Hydrogen" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Hydrogen" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Hydrogen" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Potassium" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Potassium" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Potassium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Potassium" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Phosphorous" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Phosphorous" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Phosphorous" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Phosphorous" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Calcium" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Calcium" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Calcium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Calcium" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Magnesium" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Magnesium" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Magnesium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Magnesium" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Sulphur" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Sulphur" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Sulphur" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Sulphur" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Chlorine" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Chlorine" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Chlorine" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Chlorine" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Boron" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Boron" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Boron" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Boron" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Iron" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Iron" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Iron" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Iron" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Manganese" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Manganese" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Manganese" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Manganese" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Zinc" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Zinc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Zinc" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Zinc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Copper" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Copper" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Copper" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Copper" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Sodium" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Sodium" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Sodium" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Sodium" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Molybdenum" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Molybdenum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_Molybdenum" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="Molybdenum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Division" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Division" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Division" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Division" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_subDivision" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="subDivision" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_subDivision" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subDivision" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Class" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Class" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Class" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Class" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_subClass" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="subClass" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_subClass" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subClass" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Order" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Order" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Order" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Order" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_subOrder" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="subOrder" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_subOrder" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subOrder" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Family" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Family" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Family" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Family" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_subFamily" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="subFamily" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_subFamily" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subFamily" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Genus" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Genus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Genus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Genus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_subGenus" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="subGenus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_subGenus" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subGenus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Species" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="Species" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_Species" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Species" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_subSpecies" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="subSpecies" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_subSpecies" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="subSpecies" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_leafLength" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="leafLength" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_leafLength" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="leafLength" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_leafRadius" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="leafRadius" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="Original_leafRadius" Precision="0" ProviderType="Double" Scale="0" Size="0" SourceColumn="leafRadius" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_fruitType" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="fruitType" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_fruitType" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="fruitType" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_flowerType" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="flowerType" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_flowerType" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="flowerType" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PlantlsystemID" DataSetColumn="PlantlsystemID" />
+              <Mapping SourceColumn="ScienceNameID" DataSetColumn="ScienceNameID" />
+              <Mapping SourceColumn="StemLsystemString" DataSetColumn="StemLsystemString" />
+              <Mapping SourceColumn="PetioleLsystemString" DataSetColumn="PetioleLsystemString" />
+              <Mapping SourceColumn="LeafTypeNum" DataSetColumn="LeafTypeNum" />
+              <Mapping SourceColumn="StemLengthNum" DataSetColumn="StemLengthNum" />
+              <Mapping SourceColumn="StemTopRadiusNum" DataSetColumn="StemTopRadiusNum" />
+              <Mapping SourceColumn="StemBottomRadiusNum" DataSetColumn="StemBottomRadiusNum" />
+              <Mapping SourceColumn="PetioleLengthNum" DataSetColumn="PetioleLengthNum" />
+              <Mapping SourceColumn="PetioleTopRadiusNum" DataSetColumn="PetioleTopRadiusNum" />
+              <Mapping SourceColumn="PetioleBottomRadius" DataSetColumn="PetioleBottomRadius" />
+              <Mapping SourceColumn="VeinLengthNum" DataSetColumn="VeinLengthNum" />
+              <Mapping SourceColumn="VeinTopRadiusNum" DataSetColumn="VeinTopRadiusNum" />
+              <Mapping SourceColumn="VeinBottomRadiusNum" DataSetColumn="VeinBottomRadiusNum" />
+              <Mapping SourceColumn="VeinLsystemString" DataSetColumn="VeinLsystemString" />
+              <Mapping SourceColumn="xRotate" DataSetColumn="xRotate" />
+              <Mapping SourceColumn="yRotate" DataSetColumn="yRotate" />
+              <Mapping SourceColumn="zRotate" DataSetColumn="zRotate" />
+              <Mapping SourceColumn="Nitrogen" DataSetColumn="Nitrogen" />
+              <Mapping SourceColumn="Hydrogen" DataSetColumn="Hydrogen" />
+              <Mapping SourceColumn="Potassium" DataSetColumn="Potassium" />
+              <Mapping SourceColumn="Phosphorous" DataSetColumn="Phosphorous" />
+              <Mapping SourceColumn="Calcium" DataSetColumn="Calcium" />
+              <Mapping SourceColumn="Magnesium" DataSetColumn="Magnesium" />
+              <Mapping SourceColumn="Sulphur" DataSetColumn="Sulphur" />
+              <Mapping SourceColumn="Chlorine" DataSetColumn="Chlorine" />
+              <Mapping SourceColumn="Boron" DataSetColumn="Boron" />
+              <Mapping SourceColumn="Iron" DataSetColumn="Iron" />
+              <Mapping SourceColumn="Manganese" DataSetColumn="Manganese" />
+              <Mapping SourceColumn="Zinc" DataSetColumn="Zinc" />
+              <Mapping SourceColumn="Copper" DataSetColumn="Copper" />
+              <Mapping SourceColumn="Sodium" DataSetColumn="Sodium" />
+              <Mapping SourceColumn="Molybdenum" DataSetColumn="Molybdenum" />
+              <Mapping SourceColumn="Division" DataSetColumn="Division" />
+              <Mapping SourceColumn="subDivision" DataSetColumn="subDivision" />
+              <Mapping SourceColumn="Class" DataSetColumn="Class" />
+              <Mapping SourceColumn="subClass" DataSetColumn="subClass" />
+              <Mapping SourceColumn="Order" DataSetColumn="Order" />
+              <Mapping SourceColumn="subOrder" DataSetColumn="subOrder" />
+              <Mapping SourceColumn="Family" DataSetColumn="Family" />
+              <Mapping SourceColumn="subFamily" DataSetColumn="subFamily" />
+              <Mapping SourceColumn="Genus" DataSetColumn="Genus" />
+              <Mapping SourceColumn="subGenus" DataSetColumn="subGenus" />
+              <Mapping SourceColumn="Species" DataSetColumn="Species" />
+              <Mapping SourceColumn="subSpecies" DataSetColumn="subSpecies" />
+              <Mapping SourceColumn="leafLength" DataSetColumn="leafLength" />
+              <Mapping SourceColumn="leafRadius" DataSetColumn="leafRadius" />
+              <Mapping SourceColumn="fruitType" DataSetColumn="fruitType" />
+              <Mapping SourceColumn="flowerType" DataSetColumn="flowerType" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="PlantGraphics" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="PlantGraphics" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="PlantGraphics">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PlantlsystemID, ScienceNameID, StemLsystemString, PetioleLsystemString, LeafTypeNum, StemLengthNum, StemTopRadiusNum, StemBottomRadiusNum, PetioleLengthNum, PetioleTopRadiusNum, PetioleBottomRadius, VeinLengthNum, VeinTopRadiusNum, VeinBottomRadiusNum, VeinLsystemString, xRotate, yRotate, zRotate, Nitrogen, Hydrogen, Potassium, Phosphorous, Calcium, Magnesium, Sulphur, Chlorine, Boron, Iron, Manganese, Zinc, Copper, Sodium, Molybdenum, Division, subDivision, Class, subClass, [Order], subOrder, Family, subFamily, Genus, subGenus, Species, subSpecies, leafLength, leafRadius, fruitType, flowerType FROM PlantGraphicsInformation</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryBoron" Modifier="Public" Name="ScalarQueryBoron" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy20" UserSourceName="ScalarQueryBoron">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Boron
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryCalcium" Modifier="Public" Name="ScalarQueryCalcium" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy16" UserSourceName="ScalarQueryCalcium">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Calcium
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryChlorine" Modifier="Public" Name="ScalarQueryChlorine" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy19" UserSourceName="ScalarQueryChlorine">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Chlorine
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryClass" Modifier="Public" Name="ScalarQueryClass" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy29" UserSourceName="ScalarQueryClass">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Class
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryCopper" Modifier="Public" Name="ScalarQueryCopper" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy24" UserSourceName="ScalarQueryCopper">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Copper
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryDivision" Modifier="Public" Name="ScalarQueryDivision" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy27" UserSourceName="ScalarQueryDivision">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Division
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryFamily" Modifier="Public" Name="ScalarQueryFamily" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy33" UserSourceName="ScalarQueryFamily">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Family
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryflowerType" Modifier="Public" Name="ScalarQueryflowerType" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy39" UserSourceName="ScalarQueryflowerType">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT flowerType
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryfruitType" Modifier="Public" Name="ScalarQueryfruitType" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy38" UserSourceName="ScalarQueryfruitType">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT fruitType
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryGenus" Modifier="Public" Name="ScalarQueryGenus" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy35" UserSourceName="ScalarQueryGenus">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Genus
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryHydrogen" Modifier="Public" Name="ScalarQueryHydrogen" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy14" UserSourceName="ScalarQueryHydrogen">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Hydrogen
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryIron" Modifier="Public" Name="ScalarQueryIron" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy21" UserSourceName="ScalarQueryIron">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Iron
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryLeafLength" Modifier="Public" Name="ScalarQueryLeafLength" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy37" UserSourceName="ScalarQueryLeafLength">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT LeafLength
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryLeafRadius" Modifier="Public" Name="ScalarQueryLeafRadius" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy31" UserSourceName="ScalarQueryLeafRadius">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT LeafRadius
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryLeafType" Modifier="Public" Name="ScalarQueryLeafType" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="ScalarQueryLeafType">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT LeafTypeNum
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryMagnesium" Modifier="Public" Name="ScalarQueryMagnesium" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy17" UserSourceName="ScalarQueryMagnesium">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Magnesium
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryManganese" Modifier="Public" Name="ScalarQueryManganese" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy22" UserSourceName="ScalarQueryManganese">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Manganese
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy26" GeneratorSourceName="ScalarQueryMolybdenum" Modifier="Public" Name="ScalarQueryMolybdenum" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy26" UserSourceName="ScalarQueryMolybdenum">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Molybdenum
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryNitrogen" Modifier="Public" Name="ScalarQueryNitrogen" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy12" UserSourceName="ScalarQueryNitrogen">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Nitrogen
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryOrder" Modifier="Public" Name="ScalarQueryOrder" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy40" UserSourceName="ScalarQueryOrder">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT [Order]
+FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryPetioleLength" Modifier="Public" Name="ScalarQueryPetioleLength" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy7" UserSourceName="ScalarQueryPetioleLength">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT PetioleLengthNum
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryPetioleLsystem" Modifier="Public" Name="ScalarQueryPetioleLsystem" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="ScalarQueryPetioleLsystem">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT PetioleLsystemString
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryPetioleRadius" Modifier="Public" Name="ScalarQueryPetioleRadius" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy8" UserSourceName="ScalarQueryPetioleRadius">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT PetioleTopRadiusNum
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy15" GeneratorSourceName="ScalarQueryPhosphorous" Modifier="Public" Name="ScalarQueryPhosphorous" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy15" UserSourceName="ScalarQueryPhosphorous">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Phosphorous
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryPotassium" Modifier="Public" Name="ScalarQueryPotassium" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy13" UserSourceName="ScalarQueryPotassium">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Potassium
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryScienceName" Modifier="Public" Name="ScalarQueryScienceName" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ScalarQueryScienceName">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT ScienceNameID
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQuerySodium" Modifier="Public" Name="ScalarQuerySodium" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy25" UserSourceName="ScalarQuerySodium">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Sodium
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQuerySpecies" Modifier="Public" Name="ScalarQuerySpecies" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy36" UserSourceName="ScalarQuerySpecies">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Species
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryStemLength" Modifier="Public" Name="ScalarQueryStemLength" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="ScalarQueryStemLength">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT StemLengthNum
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryStemLsystem" Modifier="Public" Name="ScalarQueryStemLsystem" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ScalarQueryStemLsystem">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT StemLsystemString
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy6" GeneratorSourceName="ScalarQueryStemRadius" Modifier="Public" Name="ScalarQueryStemRadius" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="ScalarQueryStemRadius">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT StemTopRadiusNum
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQuerysubClass" Modifier="Public" Name="ScalarQuerysubClass" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy30" UserSourceName="ScalarQuerysubClass">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT subClass
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQuerysubDivision" Modifier="Public" Name="ScalarQuerysubDivision" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy28" UserSourceName="ScalarQuerysubDivision">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT subDivision
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy34" GeneratorSourceName="ScalarQuerysubFamily" Modifier="Public" Name="ScalarQuerysubFamily" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy34" UserSourceName="ScalarQuerysubFamily">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT subFamily
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQuerysubOrder" Modifier="Public" Name="ScalarQuerysubOrder" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy32" UserSourceName="ScalarQuerysubOrder">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT subOrder
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQuerySulfur" Modifier="Public" Name="ScalarQuerySulfur" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy18" UserSourceName="ScalarQuerySulfur">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Sulphur
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryVeinLength" Modifier="Public" Name="ScalarQueryVeinLength" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy9" UserSourceName="ScalarQueryVeinLength">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT VeinLengthNum
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryVeinLsystem" Modifier="Public" Name="ScalarQueryVeinLsystem" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy11" UserSourceName="ScalarQueryVeinLsystem">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT VeinLsystemString
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryVeinRadius" Modifier="Public" Name="ScalarQueryVeinRadius" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy10" UserSourceName="ScalarQueryVeinRadius">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT VeinTopRadiusNum
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="plantsampledbConnectionString" DbObjectName="PlantGraphicsInformation" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryZinc" Modifier="Public" Name="ScalarQueryZinc" QueryType="Scalar" ScalarCallRetval="System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy23" UserSourceName="ScalarQueryZinc">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Zinc
+ FROM     PlantGraphicsInformation
+WHERE  (PlantlsystemID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="PlantlsystemID" DataSourceName="PlantGraphicsInformation" DataTypeServer="DbType.Int32" DbType="Int32" Direction="Input" ParameterName="PlantlsystemID" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="PlantlsystemID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PlantGraphics" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PlantGraphics" msprop:Generator_DataSetName="PlantGraphics">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PlantGraphicsInformation" msprop:Generator_UserTableName="PlantGraphicsInformation" msprop:Generator_RowDeletedName="PlantGraphicsInformationRowDeleted" msprop:Generator_RowChangedName="PlantGraphicsInformationRowChanged" msprop:Generator_RowClassName="PlantGraphicsInformationRow" msprop:Generator_RowChangingName="PlantGraphicsInformationRowChanging" msprop:Generator_RowEvArgName="PlantGraphicsInformationRowChangeEvent" msprop:Generator_RowEvHandlerName="PlantGraphicsInformationRowChangeEventHandler" msprop:Generator_TableClassName="PlantGraphicsInformationDataTable" msprop:Generator_TableVarName="tablePlantGraphicsInformation" msprop:Generator_RowDeletingName="PlantGraphicsInformationRowDeleting" msprop:Generator_TablePropName="PlantGraphicsInformation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PlantlsystemID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="PlantlsystemID" msprop:Generator_ColumnPropNameInRow="PlantlsystemID" msprop:Generator_ColumnVarNameInTable="columnPlantlsystemID" msprop:Generator_ColumnPropNameInTable="PlantlsystemIDColumn" type="xs:int" />
+              <xs:element name="ScienceNameID" msprop:Generator_UserColumnName="ScienceNameID" msprop:Generator_ColumnPropNameInRow="ScienceNameID" msprop:Generator_ColumnVarNameInTable="columnScienceNameID" msprop:Generator_ColumnPropNameInTable="ScienceNameIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StemLsystemString" msprop:Generator_UserColumnName="StemLsystemString" msprop:Generator_ColumnPropNameInRow="StemLsystemString" msprop:Generator_ColumnVarNameInTable="columnStemLsystemString" msprop:Generator_ColumnPropNameInTable="StemLsystemStringColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PetioleLsystemString" msprop:Generator_UserColumnName="PetioleLsystemString" msprop:Generator_ColumnPropNameInRow="PetioleLsystemString" msprop:Generator_ColumnVarNameInTable="columnPetioleLsystemString" msprop:Generator_ColumnPropNameInTable="PetioleLsystemStringColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LeafTypeNum" msprop:Generator_UserColumnName="LeafTypeNum" msprop:Generator_ColumnPropNameInRow="LeafTypeNum" msprop:Generator_ColumnVarNameInTable="columnLeafTypeNum" msprop:Generator_ColumnPropNameInTable="LeafTypeNumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="StemLengthNum" msprop:Generator_UserColumnName="StemLengthNum" msprop:Generator_ColumnPropNameInRow="StemLengthNum" msprop:Generator_ColumnVarNameInTable="columnStemLengthNum" msprop:Generator_ColumnPropNameInTable="StemLengthNumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="StemTopRadiusNum" msprop:Generator_UserColumnName="StemTopRadiusNum" msprop:Generator_ColumnPropNameInRow="StemTopRadiusNum" msprop:Generator_ColumnVarNameInTable="columnStemTopRadiusNum" msprop:Generator_ColumnPropNameInTable="StemTopRadiusNumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="StemBottomRadiusNum" msprop:Generator_UserColumnName="StemBottomRadiusNum" msprop:Generator_ColumnPropNameInRow="StemBottomRadiusNum" msprop:Generator_ColumnVarNameInTable="columnStemBottomRadiusNum" msprop:Generator_ColumnPropNameInTable="StemBottomRadiusNumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PetioleLengthNum" msprop:Generator_UserColumnName="PetioleLengthNum" msprop:Generator_ColumnPropNameInRow="PetioleLengthNum" msprop:Generator_ColumnVarNameInTable="columnPetioleLengthNum" msprop:Generator_ColumnPropNameInTable="PetioleLengthNumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PetioleTopRadiusNum" msprop:Generator_UserColumnName="PetioleTopRadiusNum" msprop:Generator_ColumnPropNameInRow="PetioleTopRadiusNum" msprop:Generator_ColumnVarNameInTable="columnPetioleTopRadiusNum" msprop:Generator_ColumnPropNameInTable="PetioleTopRadiusNumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PetioleBottomRadius" msprop:Generator_UserColumnName="PetioleBottomRadius" msprop:Generator_ColumnPropNameInRow="PetioleBottomRadius" msprop:Generator_ColumnVarNameInTable="columnPetioleBottomRadius" msprop:Generator_ColumnPropNameInTable="PetioleBottomRadiusColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="VeinLengthNum" msprop:Generator_UserColumnName="VeinLengthNum" msprop:Generator_ColumnPropNameInRow="VeinLengthNum" msprop:Generator_ColumnVarNameInTable="columnVeinLengthNum" msprop:Generator_ColumnPropNameInTable="VeinLengthNumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="VeinTopRadiusNum" msprop:Generator_UserColumnName="VeinTopRadiusNum" msprop:Generator_ColumnPropNameInRow="VeinTopRadiusNum" msprop:Generator_ColumnVarNameInTable="columnVeinTopRadiusNum" msprop:Generator_ColumnPropNameInTable="VeinTopRadiusNumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="VeinBottomRadiusNum" msprop:Generator_UserColumnName="VeinBottomRadiusNum" msprop:Generator_ColumnPropNameInRow="VeinBottomRadiusNum" msprop:Generator_ColumnVarNameInTable="columnVeinBottomRadiusNum" msprop:Generator_ColumnPropNameInTable="VeinBottomRadiusNumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="VeinLsystemString" msprop:Generator_UserColumnName="VeinLsystemString" msprop:Generator_ColumnPropNameInRow="VeinLsystemString" msprop:Generator_ColumnVarNameInTable="columnVeinLsystemString" msprop:Generator_ColumnPropNameInTable="VeinLsystemStringColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xRotate" msprop:Generator_UserColumnName="xRotate" msprop:Generator_ColumnPropNameInRow="xRotate" msprop:Generator_ColumnVarNameInTable="columnxRotate" msprop:Generator_ColumnPropNameInTable="xRotateColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="yRotate" msprop:Generator_UserColumnName="yRotate" msprop:Generator_ColumnPropNameInRow="yRotate" msprop:Generator_ColumnVarNameInTable="columnyRotate" msprop:Generator_ColumnPropNameInTable="yRotateColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="zRotate" msprop:Generator_UserColumnName="zRotate" msprop:Generator_ColumnPropNameInRow="zRotate" msprop:Generator_ColumnVarNameInTable="columnzRotate" msprop:Generator_ColumnPropNameInTable="zRotateColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Nitrogen" msprop:Generator_UserColumnName="Nitrogen" msprop:Generator_ColumnPropNameInRow="Nitrogen" msprop:Generator_ColumnVarNameInTable="columnNitrogen" msprop:Generator_ColumnPropNameInTable="NitrogenColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Hydrogen" msprop:Generator_UserColumnName="Hydrogen" msprop:Generator_ColumnPropNameInRow="Hydrogen" msprop:Generator_ColumnVarNameInTable="columnHydrogen" msprop:Generator_ColumnPropNameInTable="HydrogenColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Potassium" msprop:Generator_UserColumnName="Potassium" msprop:Generator_ColumnPropNameInRow="Potassium" msprop:Generator_ColumnVarNameInTable="columnPotassium" msprop:Generator_ColumnPropNameInTable="PotassiumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Phosphorous" msprop:Generator_UserColumnName="Phosphorous" msprop:Generator_ColumnPropNameInRow="Phosphorous" msprop:Generator_ColumnVarNameInTable="columnPhosphorous" msprop:Generator_ColumnPropNameInTable="PhosphorousColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Calcium" msprop:Generator_UserColumnName="Calcium" msprop:Generator_ColumnPropNameInRow="Calcium" msprop:Generator_ColumnVarNameInTable="columnCalcium" msprop:Generator_ColumnPropNameInTable="CalciumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Magnesium" msprop:Generator_UserColumnName="Magnesium" msprop:Generator_ColumnPropNameInRow="Magnesium" msprop:Generator_ColumnVarNameInTable="columnMagnesium" msprop:Generator_ColumnPropNameInTable="MagnesiumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Sulphur" msprop:Generator_UserColumnName="Sulphur" msprop:Generator_ColumnPropNameInRow="Sulphur" msprop:Generator_ColumnVarNameInTable="columnSulphur" msprop:Generator_ColumnPropNameInTable="SulphurColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Chlorine" msprop:Generator_UserColumnName="Chlorine" msprop:Generator_ColumnPropNameInRow="Chlorine" msprop:Generator_ColumnVarNameInTable="columnChlorine" msprop:Generator_ColumnPropNameInTable="ChlorineColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Boron" msprop:Generator_UserColumnName="Boron" msprop:Generator_ColumnPropNameInRow="Boron" msprop:Generator_ColumnVarNameInTable="columnBoron" msprop:Generator_ColumnPropNameInTable="BoronColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Iron" msprop:Generator_UserColumnName="Iron" msprop:Generator_ColumnPropNameInRow="Iron" msprop:Generator_ColumnVarNameInTable="columnIron" msprop:Generator_ColumnPropNameInTable="IronColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Manganese" msprop:Generator_UserColumnName="Manganese" msprop:Generator_ColumnPropNameInRow="Manganese" msprop:Generator_ColumnVarNameInTable="columnManganese" msprop:Generator_ColumnPropNameInTable="ManganeseColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Zinc" msprop:Generator_UserColumnName="Zinc" msprop:Generator_ColumnPropNameInRow="Zinc" msprop:Generator_ColumnVarNameInTable="columnZinc" msprop:Generator_ColumnPropNameInTable="ZincColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Copper" msprop:Generator_UserColumnName="Copper" msprop:Generator_ColumnPropNameInRow="Copper" msprop:Generator_ColumnVarNameInTable="columnCopper" msprop:Generator_ColumnPropNameInTable="CopperColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Sodium" msprop:Generator_UserColumnName="Sodium" msprop:Generator_ColumnPropNameInRow="Sodium" msprop:Generator_ColumnVarNameInTable="columnSodium" msprop:Generator_ColumnPropNameInTable="SodiumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Molybdenum" msprop:Generator_UserColumnName="Molybdenum" msprop:Generator_ColumnPropNameInRow="Molybdenum" msprop:Generator_ColumnVarNameInTable="columnMolybdenum" msprop:Generator_ColumnPropNameInTable="MolybdenumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Division" msprop:Generator_UserColumnName="Division" msprop:Generator_ColumnPropNameInRow="Division" msprop:Generator_ColumnVarNameInTable="columnDivision" msprop:Generator_ColumnPropNameInTable="DivisionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="subDivision" msprop:Generator_UserColumnName="subDivision" msprop:Generator_ColumnPropNameInRow="subDivision" msprop:Generator_ColumnVarNameInTable="columnsubDivision" msprop:Generator_ColumnPropNameInTable="subDivisionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Class" msprop:Generator_UserColumnName="Class" msprop:Generator_ColumnPropNameInRow="Class" msprop:Generator_ColumnVarNameInTable="columnClass" msprop:Generator_ColumnPropNameInTable="ClassColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="subClass" msprop:Generator_UserColumnName="subClass" msprop:Generator_ColumnPropNameInRow="subClass" msprop:Generator_ColumnVarNameInTable="columnsubClass" msprop:Generator_ColumnPropNameInTable="subClassColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Order" msprop:Generator_UserColumnName="Order" msprop:Generator_ColumnPropNameInRow="Order" msprop:Generator_ColumnVarNameInTable="columnOrder" msprop:Generator_ColumnPropNameInTable="OrderColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="subOrder" msprop:Generator_UserColumnName="subOrder" msprop:Generator_ColumnPropNameInRow="subOrder" msprop:Generator_ColumnVarNameInTable="columnsubOrder" msprop:Generator_ColumnPropNameInTable="subOrderColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Family" msprop:Generator_UserColumnName="Family" msprop:Generator_ColumnPropNameInRow="Family" msprop:Generator_ColumnVarNameInTable="columnFamily" msprop:Generator_ColumnPropNameInTable="FamilyColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="subFamily" msprop:Generator_UserColumnName="subFamily" msprop:Generator_ColumnPropNameInRow="subFamily" msprop:Generator_ColumnVarNameInTable="columnsubFamily" msprop:Generator_ColumnPropNameInTable="subFamilyColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Genus" msprop:Generator_UserColumnName="Genus" msprop:Generator_ColumnPropNameInRow="Genus" msprop:Generator_ColumnVarNameInTable="columnGenus" msprop:Generator_ColumnPropNameInTable="GenusColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="subGenus" msprop:Generator_UserColumnName="subGenus" msprop:Generator_ColumnPropNameInRow="subGenus" msprop:Generator_ColumnVarNameInTable="columnsubGenus" msprop:Generator_ColumnPropNameInTable="subGenusColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Species" msprop:Generator_UserColumnName="Species" msprop:Generator_ColumnPropNameInRow="Species" msprop:Generator_ColumnVarNameInTable="columnSpecies" msprop:Generator_ColumnPropNameInTable="SpeciesColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="subSpecies" msprop:Generator_UserColumnName="subSpecies" msprop:Generator_ColumnPropNameInRow="subSpecies" msprop:Generator_ColumnVarNameInTable="columnsubSpecies" msprop:Generator_ColumnPropNameInTable="subSpeciesColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="leafLength" msprop:Generator_UserColumnName="leafLength" msprop:Generator_ColumnPropNameInRow="leafLength" msprop:Generator_ColumnVarNameInTable="columnleafLength" msprop:Generator_ColumnPropNameInTable="leafLengthColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="leafRadius" msprop:Generator_UserColumnName="leafRadius" msprop:Generator_ColumnPropNameInRow="leafRadius" msprop:Generator_ColumnVarNameInTable="columnleafRadius" msprop:Generator_ColumnPropNameInTable="leafRadiusColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="fruitType" msprop:Generator_UserColumnName="fruitType" msprop:Generator_ColumnPropNameInRow="fruitType" msprop:Generator_ColumnVarNameInTable="columnfruitType" msprop:Generator_ColumnPropNameInTable="fruitTypeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="flowerType" msprop:Generator_UserColumnName="flowerType" msprop:Generator_ColumnPropNameInRow="flowerType" msprop:Generator_ColumnVarNameInTable="columnflowerType" msprop:Generator_ColumnPropNameInTable="flowerTypeColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PlantGraphicsInformation" />
+      <xs:field xpath="mstns:PlantlsystemID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1CCA1D5A-6443-4542-9F3C-CEDF3102A54A}</ProjectGuid>
+    <RootNamespace>PlantCreator</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>Pure</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>openGL32.lib;glu32.lib;gdi32.lib;User32.lib</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="DisplayList.cpp" />
+    <ClCompile Include="PlantCreator.cpp" />
+    <ClCompile Include="Sleep.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico" />
+    <None Include="plantsampledb.mdb" />
+    <None Include="ReadMe.txt" />
+    <None Include="classDataSet.xsc">
+      <DependentUpon>classDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="classDataSet.xss">
+      <DependentUpon>classDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="divisionDataSet.xsc">
+      <DependentUpon>divisionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="divisionDataSet.xss">
+      <DependentUpon>divisionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="familyDataSet.xsc">
+      <DependentUpon>familyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="familyDataSet.xss">
+      <DependentUpon>familyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="genusDataSet.xsc">
+      <DependentUpon>genusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="genusDataSet.xss">
+      <DependentUpon>genusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="orderDataSet.xsc">
+      <DependentUpon>orderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="orderDataSet.xss">
+      <DependentUpon>orderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PlantGraphics.xsc">
+      <DependentUpon>PlantGraphics.xsd</DependentUpon>
+    </None>
+    <None Include="PlantGraphics.xss">
+      <DependentUpon>PlantGraphics.xsd</DependentUpon>
+    </None>
+    <None Include="speciesDataSet.xsc">
+      <DependentUpon>speciesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="speciesDataSet.xss">
+      <DependentUpon>speciesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="subClassDataSet.xsc">
+      <DependentUpon>subClassDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="subClassDataSet.xss">
+      <DependentUpon>subClassDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="subDivisionDataSet.xsc">
+      <DependentUpon>subDivisionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="subDivisionDataSet.xss">
+      <DependentUpon>subDivisionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="subFamilyDataSet.xsc">
+      <DependentUpon>subFamilyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="subFamilyDataSet.xss">
+      <DependentUpon>subFamilyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="subOrderDataSet.xsc">
+      <DependentUpon>subOrderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="subOrderDataSet.xss">
+      <DependentUpon>subOrderDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="classDataSet.xsd" />
+    <Xsd Include="divisionDataSet.xsd" />
+    <Xsd Include="familyDataSet.xsd" />
+    <Xsd Include="genusDataSet.xsd" />
+    <Xsd Include="orderDataSet.xsd" />
+    <Xsd Include="PlantGraphics.xsd" />
+    <Xsd Include="speciesDataSet.xsd" />
+    <Xsd Include="subClassDataSet.xsd" />
+    <Xsd Include="subDivisionDataSet.xsd" />
+    <Xsd Include="subFamilyDataSet.xsd" />
+    <Xsd Include="subOrderDataSet.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DisplayList.h" />
+    <ClInclude Include="Form1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GetGlut.h" />
+    <ClInclude Include="GLUT.H" />
+    <ClInclude Include="OpenGL.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Sleep.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="classDataSet.h">
+      <DependentUpon>classDataSet.xsd</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="divisionDataSet.h">
+      <DependentUpon>divisionDataSet.xsd</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="familyDataSet.h">
+      <DependentUpon>familyDataSet.xsd</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="genusDataSet.h">
+      <DependentUpon>genusDataSet.xsd</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="orderDataSet.h">
+      <DependentUpon>orderDataSet.xsd</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="PlantGraphics.h">
+      <DependentUpon>PlantGraphics.xsd</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="speciesDataSet.h">
+      <DependentUpon>speciesDataSet.xsd</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="subClassDataSet.h">
+      <DependentUpon>subClassDataSet.xsd</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="subDivisionDataSet.h">
+      <DependentUpon>subDivisionDataSet.xsd</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="subFamilyDataSet.h">
+      <DependentUpon>subFamilyDataSet.xsd</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="subOrderDataSet.h">
+      <DependentUpon>subOrderDataSet.xsd</DependentUpon>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resX">
+      <DependentUpon>Form1.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

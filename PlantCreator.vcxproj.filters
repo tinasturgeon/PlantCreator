@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="DataSources">
+      <UniqueIdentifier>{85e15fd5-5791-4686-abc0-81e05c9c65ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataSources\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlantCreator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sleep.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="plantsampledb.mdb" />
+    <None Include="ReadMe.txt" />
+    <None Include="classDataSet.xsc" />
+    <None Include="classDataSet.xss" />
+    <None Include="divisionDataSet.xsc" />
+    <None Include="divisionDataSet.xss" />
+    <None Include="familyDataSet.xsc" />
+    <None Include="familyDataSet.xss" />
+    <None Include="genusDataSet.xsc" />
+    <None Include="genusDataSet.xss" />
+    <None Include="orderDataSet.xsc" />
+    <None Include="orderDataSet.xss" />
+    <None Include="PlantGraphics.xsc" />
+    <None Include="PlantGraphics.xss" />
+    <None Include="speciesDataSet.xsc" />
+    <None Include="speciesDataSet.xss" />
+    <None Include="subClassDataSet.xsc" />
+    <None Include="subClassDataSet.xss" />
+    <None Include="subDivisionDataSet.xsc" />
+    <None Include="subDivisionDataSet.xss" />
+    <None Include="subFamilyDataSet.xsc" />
+    <None Include="subFamilyDataSet.xss" />
+    <None Include="subOrderDataSet.xsc" />
+    <None Include="subOrderDataSet.xss" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="classDataSet.xsd">
+      <Filter>DataSources\Header Files</Filter>
+    </Xsd>
+    <Xsd Include="divisionDataSet.xsd">
+      <Filter>DataSources\Header Files</Filter>
+    </Xsd>
+    <Xsd Include="familyDataSet.xsd">
+      <Filter>DataSources\Header Files</Filter>
+    </Xsd>
+    <Xsd Include="genusDataSet.xsd">
+      <Filter>DataSources\Header Files</Filter>
+    </Xsd>
+    <Xsd Include="orderDataSet.xsd">
+      <Filter>DataSources\Header Files</Filter>
+    </Xsd>
+    <Xsd Include="PlantGraphics.xsd">
+      <Filter>DataSources\Header Files</Filter>
+    </Xsd>
+    <Xsd Include="speciesDataSet.xsd">
+      <Filter>DataSources\Header Files</Filter>
+    </Xsd>
+    <Xsd Include="subClassDataSet.xsd">
+      <Filter>DataSources\Header Files</Filter>
+    </Xsd>
+    <Xsd Include="subDivisionDataSet.xsd">
+      <Filter>DataSources\Header Files</Filter>
+    </Xsd>
+    <Xsd Include="subFamilyDataSet.xsd">
+      <Filter>DataSources\Header Files</Filter>
+    </Xsd>
+    <Xsd Include="subOrderDataSet.xsd">
+      <Filter>DataSources\Header Files</Filter>
+    </Xsd>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DisplayList.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Form1.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GetGlut.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GLUT.H">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sleep.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="classDataSet.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="divisionDataSet.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="familyDataSet.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="genusDataSet.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="orderDataSet.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlantGraphics.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="speciesDataSet.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="subClassDataSet.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="subDivisionDataSet.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="subFamilyDataSet.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="subOrderDataSet.h">
+      <Filter>DataSources\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resX">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

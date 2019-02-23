@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="subDivisionDataSet" targetNamespace="http://tempuri.org/subDivisionDataSet.xsd" xmlns:mstns="http://tempuri.org/subDivisionDataSet.xsd" xmlns="http://tempuri.org/subDivisionDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="subDivisionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="subDivisionDataSet" msprop:Generator_DataSetName="subDivisionDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ScienceName" msprop:Generator_UserTableName="ScienceName" msprop:Generator_RowDeletedName="ScienceNameRowDeleted" msprop:Generator_TableClassName="ScienceNameDataTable" msprop:Generator_RowChangedName="ScienceNameRowChanged" msprop:Generator_RowClassName="ScienceNameRow" msprop:Generator_RowChangingName="ScienceNameRowChanging" msprop:Generator_RowEvArgName="ScienceNameRowChangeEvent" msprop:Generator_RowEvHandlerName="ScienceNameRowChangeEventHandler" msprop:Generator_TablePropName="ScienceName" msprop:Generator_TableVarName="tableScienceName" msprop:Generator_RowDeletingName="ScienceNameRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ScienceNameID" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ScienceNameID" msprop:Generator_ColumnPropNameInRow="ScienceNameID" msprop:Generator_ColumnVarNameInTable="columnScienceNameID" msprop:Generator_ColumnPropNameInTable="ScienceNameIDColumn" type="xs:int" />
+              <xs:element name="CategoryID" msprop:Generator_UserColumnName="CategoryID" msprop:Generator_ColumnPropNameInRow="CategoryID" msprop:Generator_ColumnVarNameInTable="columnCategoryID" msprop:Generator_ColumnPropNameInTable="CategoryIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ScienceName" msprop:Generator_UserColumnName="ScienceName" msprop:Generator_ColumnPropNameInRow="ScienceName" msprop:Generator_ColumnVarNameInTable="columnScienceName" msprop:Generator_ColumnPropNameInTable="ScienceNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentScienceNameID" msprop:Generator_UserColumnName="ParentScienceNameID" msprop:Generator_ColumnPropNameInRow="ParentScienceNameID" msprop:Generator_ColumnVarNameInTable="columnParentScienceNameID" msprop:Generator_ColumnPropNameInTable="ParentScienceNameIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ScienceName" />
+      <xs:field xpath="mstns:ScienceNameID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
