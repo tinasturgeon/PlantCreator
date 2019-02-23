@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="PlantCreator">
+</Property><Property Name="Solution File" Value="D:\Tina oldlaptop\Documents\Visual Studio 2010\Projects\PlantCreator\PlantCreator.sln">
+</Property><Property Name="User Options File" Value="D:\Tina oldlaptop\Documents\Visual Studio 2010\Projects\PlantCreator\PlantCreator.suo">
+</Property><Property Name="Date" Value="November 1, 2018">
+</Property><Property Name="Time" Value="11:32 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="PlantCreator.sln" Description="File successfully backed up as D:\Tina oldlaptop\Documents\Visual Studio 2010\Projects\PlantCreator\PlantCreator.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="PlantCreator.suo" Description="File successfully backed up as D:\Tina oldlaptop\Documents\Visual Studio 2010\Projects\PlantCreator\PlantCreator.suo.old">
+</Event><Event ErrorLevel="0" Project="PlantCreator" Source="PlantCreator\PlantCreator.vcproj" Description="Converting project file 'D:\Tina oldlaptop\Documents\Visual Studio 2010\Projects\PlantCreator\PlantCreator\PlantCreator.vcproj'.">
+</Event><Event ErrorLevel="1" Project="PlantCreator" Source="PlantCreator\PlantCreator.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="PlantCreator" Source="PlantCreator\PlantCreator.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="PlantCreator" Source="PlantCreator\PlantCreator.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="PlantCreator" Source="PlantCreator\PlantCreator.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="PlantCreator" Source="PlantCreator\PlantCreator.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="PlantCreator" Source="PlantCreator\PlantCreator.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="PlantCreator" Source="PlantCreator\PlantCreator.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="PlantCreator" Source="PlantCreator\PlantCreator.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="PlantCreator" Source="PlantCreator\PlantCreator.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="PlantCreator" Source="PlantCreator\PlantCreator.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="PlantCreator" Source="PlantCreator\PlantCreator.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="PlantCreator" Source="PlantCreator\PlantCreator.vcproj" Description="Done converting to new project file 'D:\Tina oldlaptop\Documents\Visual Studio 2010\Projects\PlantCreator\PlantCreator\PlantCreator.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="PlantCreator" Source="PlantCreator\PlantCreator.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="PlantCreator.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="PlantCreator.sln" Description="Converted">
+</Event></UpgradeLog>
