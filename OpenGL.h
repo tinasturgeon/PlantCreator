@@ -3372,7 +3372,7 @@ namespace OpenGLForm
 			g_iterations++;
 			//change the taper of the stem
 			stemBottomRadius2[g_iterations] = stemTopRadius2[g_iterations];
-			stemTopRadius2[g_iterations] -= stemTopRadius2[g_iterations]/100;
+			stemTopRadius2[g_iterations] -= stemTopRadius2[g_iterations];// / 100;
 			g_plant = growPlant(AXIOM, g_iterations,ga_production_rules);
 
 			Render();
@@ -3751,7 +3751,7 @@ namespace OpenGLForm
 						yearCounter = 0;
 						if(g_iterations < MAX_ITERATIONS)g_iterations++;
 						//change the taper of the stem
-						stemLength2[yearno] = 0.1;stemBottomRadius2[yearno] = 0.1;stemTopRadius2[yearno] = 0.1;
+						stemLength2[yearno] = 0.1;stemBottomRadius2[yearno] = 0.01;stemTopRadius2[yearno] = 0.01;
 						leafLength2[yearno]=0.01;leafRadius2[yearno]=0.005;thickness = -0.003;
 						petioleBottomRadius = petioleTopRadius;
 						petioleLength = 0.001;
